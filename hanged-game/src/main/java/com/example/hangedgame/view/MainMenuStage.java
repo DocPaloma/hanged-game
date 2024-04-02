@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class MainMenuStage extends Stage {
 
+    private static MainMenuStage INSTANCE;
     private StartController startController;
 
     public MainMenuStage() throws IOException {
@@ -20,20 +21,20 @@ public class MainMenuStage extends Stage {
         show();
     }
 
-    public GameController getGameController(){
-        return gameController;
+    public StartController getStartController(){
+        return startController;
     }
 
-    public static GameStage getInstance() throws IOException{
-        return GameStageHolder.INSTANCE = new GameStage();
+    public static MainMenuStage getInstance() throws IOException{
+        return MainMenuStage.INSTANCE = new MainMenuStage();
     }
 
     public static void deleteInstance() {
-        GameStageHolder.INSTANCE.close();
-        GameStageHolder.INSTANCE = null;
+        MainMenuStage.INSTANCE.close();
+        MainMenuStage.INSTANCE = null;
     }
 
-    private static class GameStageHolder {
-        private static GameStage INSTANCE;
+    private static class MainMenuHolder {
+        private static MainMenuStage INSTANCE;
     }
 }

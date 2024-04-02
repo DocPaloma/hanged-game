@@ -14,7 +14,7 @@ public class GameController {
     private SecretWord secretWord;
 
     @FXML
-    void onHandleButtonPlay(ActionEvent event) {
+    void onHandleButtonActionStart(ActionEvent event) {
         secretWord = new SecretWord(secretWordTextField.getText().trim());
 
         for (int i=0; i<secretWord.getWord().length(); i++){
