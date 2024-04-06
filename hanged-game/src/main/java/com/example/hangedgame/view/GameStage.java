@@ -1,3 +1,5 @@
+package com.example.hangedgame.view;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -7,7 +9,7 @@ import java.io.IOException;
 
 public class GameStage extends Stage {
 
-    private GameController gameController;
+    private Object gameController;
 
     public GameStage() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/hanged-game/game-view.fxml"));
@@ -20,7 +22,7 @@ public class GameStage extends Stage {
         show();
     }
 
-    public GameController getGameController(){
+    public Object getGameController(){
         return gameController;
     }
 

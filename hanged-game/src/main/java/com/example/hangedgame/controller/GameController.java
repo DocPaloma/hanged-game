@@ -1,3 +1,6 @@
+package com.example.hangedgame.controller;
+
+import com.example.hangedgame.model.SecretWord;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

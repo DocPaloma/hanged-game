@@ -1,3 +1,5 @@
+package com.example.hangedgame.model;
+
 public class SecretWord {
     private String word;
     private String [] arrayWord;

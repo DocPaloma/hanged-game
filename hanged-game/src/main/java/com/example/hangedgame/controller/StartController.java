@@ -1,3 +1,7 @@
+package com.example.hangedgame.controller;
+
+import com.example.hangedgame.view.GameStage;
+import com.example.hangedgame.view.MainStage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -23,7 +27,7 @@ public class StartController {
 //            hboxLayout.getChildren().add(wordTxt);
 //            keyPressed(wordTxt, i);
 //        }
-        MainMenuStage.deleteInstance();
+        MainStage.deleteInstance();
         GameStage.getInstance();
     }
 }
